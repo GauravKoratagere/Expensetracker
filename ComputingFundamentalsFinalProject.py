@@ -33,7 +33,7 @@ class monthly_Spending:
         print("Thank you for entering your information")
 #Task 3:
     def checksavings(self):
-        print("Your currently saving $", self.savings, " every month.")
+        print("Your currently saving $", monthly_Spending.add_commas(self.savings), " every month.")
         if self.savings <= 0:
             print("You are currently not saving any money.")
             if self.spending >= 0:
