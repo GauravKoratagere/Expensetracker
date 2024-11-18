@@ -55,14 +55,13 @@ class monthly_Spending:
      plt.show()
 #Task 4:
     def checksavings(self):
-         print("Your currently saving $", monthly_Spending.add_commas(self.__savings), " every month.")
          if self.__savings <= 0:
              print("You are currently not saving any money.")
              if self.__spending >= 0:
                  print ("You might want to cut down on your nonessential spending.")
                  return (False)
          else:
-             print ("You are currently saving $", self.__savings)
+             print ("You are currently saving $", self.__savings, " every month.")
              wealth_Invested=round((self.__savings)*((((1+(monthlyReturnRate))**(time*12))-1)/(monthlyReturnRate))*(1+(monthlyReturnRate)),2)
              print("You could make $",monthly_Spending.add_commas(wealth_Invested), " over the course of 30 years if you put the money into an S&P 500 with roughly seven percent in annual returns.")
              return (True)
